@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Paul Borowiecki
-subtitle: 
+subtitle:
 pagination:
   data: collections.posts
   size: 10
@@ -13,7 +13,7 @@ pagination:
 {% if post.data.published %}
 <div class="py-4">
   <p>
-    <span class="text-2xl sm:text-4xl font-bold hover:text-blue-700 leading-tight"><a href="{{ post.url }}">{{
+    <span class="text-2xl sm:text-4xl font-bold hover:text-amber-700 leading-tight"><a href="{{ post.url }}">{{
         post.data.title }}</a></span>
     <span class="text-base sm:text-2xl font-normal"> &middot; {{ post.content | safe | readTime }} min read</span>
   </p>
@@ -31,7 +31,7 @@ pagination:
       {% endfor %}
     </div>
 
-    <a class="flex-none hover:underline font-semibold text-blue-700" href="{{ post.url }}">Read this post &rarr;</a>
+    <a class="flex-none hover:underline font-semibold text-amber-700" href="{{ post.url }}">Read this post &rarr;</a>
   </div>
 
 </div>

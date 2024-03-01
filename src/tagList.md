@@ -16,7 +16,7 @@ eleventyComputed:
   </p>
   <em>{{ post.date | postDate }}</em>
   <p class="mt-4">{{ post.data.post_excerpt }}... 
-    <span class="hover:underline text-indigo-500"><a href="{{ post.url }}">Read More</a></span>
+    <span class="hover:underline text-amber-500"><a href="{{ post.url }}">Read More</a></span>
   </p>
 </div>
 {% endfor %}
