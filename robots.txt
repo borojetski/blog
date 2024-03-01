@@ -1,0 +1,4 @@
+Sitemap: https://borojetski.pages.dev/sitemap.xml
+
+User-agent: *
+Disallow:
