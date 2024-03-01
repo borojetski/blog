@@ -1,17 +1,19 @@
 <footer class="mt-8 bg-gray-200 dark:bg-gray-900 py-2 flex-shrink-0">
   <div class="max-w-screen-sm md:max-w-screen-md mx-auto px-8">
-    <p class="text-sm py-2 text-right">
-      {% if site.mastodon != "" %}<a href={{ site.mastodon }}>Mastodon</a>
-      {% endif %}
-
+    <p class="py-4" style="display: flex; justify-content: center;">
       {% if site.github != "" %}
-      &middot; <a href={{ site.github }}>Github</a>
+      <a href={{ site.github }}><img src="/assets/img/Github_black.svg" alt="Github icon"></a>
       {% endif %}
 
       {% if site.twitter != "" %}
-      &middot; <a href={{ site.twitter }}>Twitter</a>
+      &nbsp;&nbsp;&middot;&nbsp;&nbsp; <a href={{ site.twitter }}><img src="/assets/img/Twitter_black.svg"
+          alt="Twitter icon"></a>
       {% endif %}
 
+      {% if site.mastodon != "" %}
+      &nbsp;&nbsp;&middot;&nbsp;&nbsp; <a href={{ site.mastodon }}><img src="/assets/img/Mastodon_black.svg"
+          alt="Mastodon icon"></a>
+      {% endif %}
     </p>
   </div>
 </footer>
