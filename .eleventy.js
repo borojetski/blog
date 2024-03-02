@@ -2,10 +2,12 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 const { DateTime } = require("luxon")
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(syntaxHighlight)
+  eleventyConfig.addPlugin(pluginRss);
 
   // To enable merging of tags
   eleventyConfig.setDataDeepMerge(true)
