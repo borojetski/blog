@@ -63,6 +63,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode('asset_img', (filename, alt, path = '/assets/img/posts/') =>
     `<img class="my-4" src="${path}${filename}" alt="${alt}" />`
   )
+  eleventyConfig.addTransform("addImgClass", function(content, outputPath) {
+    if( outputPath.endsWith(".html") ) {
+      return content.replace(/<img /g, '<img class="mx-auto" ');
+    }
+    return content;
+  });
 
   return {
     dir: {
