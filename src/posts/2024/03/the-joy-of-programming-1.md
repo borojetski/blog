@@ -6,6 +6,8 @@ tags:
   - python
   - learning
 ---
+Look Ma, I'm on the internet!
+<!-- excerpt -->
 
 In this inaugural post, I’ll be delving into the long awaited sequel to Alex Comfort's _The Joy of_—, let me check my notes here. Actually, this one is [JOY OF PROGRAMMING - Software Engineering Simulator](https://store.steampowered.com/app/2216770/JOY_OF_PROGRAMMING__Software_Engineering_Simulator/). A Steam game that instead teaches you about Python. Cool.
 
