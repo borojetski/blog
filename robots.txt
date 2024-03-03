@@ -3,3 +3,6 @@ Sitemap: https://borojetski.pages.dev/sitemap.xml
 User-agent: *
 Allow: /
 Disallow:
+
+User-agent: GPTBot
+Disallow: /
