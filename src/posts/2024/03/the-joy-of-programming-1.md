@@ -15,7 +15,7 @@ This post is all setup and background. Part 2 will be me actually loading up the
 
 ### Background
 
-![A screenshot of the Joy of Programming Steam page.](/assets/img/posts/jop-steam-page.jpg)
+![A screenshot of the Joy of Programming Steam page.](/assets/img/posts/jop1/jop-steam-page.jpg)
 
 According to the Steam page, this game is designed primarily as a learning tool in game form. They recommend having prior programming knowledge and that you have an actual interest in learning python or at least programming. As it's designed by a computer science professor, so far this all sounds like edutainment. So...low expectations.
 

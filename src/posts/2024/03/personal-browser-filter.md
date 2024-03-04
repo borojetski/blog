@@ -30,34 +30,30 @@ Ultimately, what we're doing is using your adblocker's element picker to manuall
 ### Set Up Your Cloud Hosted Filter
 
 This *can* be done on mobile, but this section will be described as if you're on a desktop browser. Assuming you have a Github account setup already, go to the 'Repositories' page, create a new repository, and give it a repository name like browser-settings, or personal-filters, or whatever. Make sure it's set to Public, but you can leave everything else default or customize it however you like. Setting it to private will lead to problems down the road.
-
-{% asset_img '1-repo.jpg', 'Add repository button' %}
-
+![Add repository button](/assets/img/posts/pbf/1-repo.jpg)
 Now that you're in your repo, to the left of the 'Code' drop down menu, click the '+' or 'Add file' button to create a new file. 
-
-{% asset_img '2-add-file.jpg', 'Add file button' %}
-
+![Add file button](/assets/img/posts/pbf/2-add-file.jpg)
 Above the input box, name this file my-trivial-attempt-at-decrappifying-the-internet.txt or my-filter.txt or whatever. The .txt file extension is important. Let's leave this browser tab open for now.
 
 
 ### Declutter Time
 
 Now navigate to a site you frequent often. One that specifically has some elements that your brain automatically overlooks because they were put there to sell you something, clutter the screen, and slow down page load. Click the uBlock icon in the toolbar and select the eyedropper icon (to enter element picker mode). You may need to expand the uBlock Origin menu by clicking 'More &or;' a couple of times.
-{% asset_img '3-ub.jpg', 'uBlock Origin icon' %}
-{% asset_img '4-0-element-picker.jpg', 'Element Picker button' %}
+![uBlock Origin icon](/assets/img/posts/pbf/3-ub.jpg)
+![Element Picker button](/assets/img/posts/pbf/4-0-element-picker.jpg)
 Now when you click an element you'll see an outline highlighting that element. Use the sliders in uBlock's bottom corner menu that opens up to expand or shrink how much of the element you want to remove. Hit the preview button if you want to verify that it looks right, then click Create when done, or quit or Esc to redo it. Magic. Now go to town on it. The goal is to purge all the crap. Then find another site. Wreck that one too. Every time you remove an element, you're adding a filter to uBlock Origin's 'My filters' list. 
 Now that we have some filters to work with, click on the uBlock Origin icon in the toolbar again. In the bottom right corner of the submenu, you should see a 'gears' icon to open the dashboard. 
-{% asset_img '4-1-dashboard.jpg', 'Dashboard button' %}
+![Dashboard button](/assets/img/posts/pbf/4-1-dashboard.jpg)
 Look for the 'My filters' tab and you'll see a text file with all the elements you've just removed along with any that you may have removed years ago because you forgot you've already done this at one point but time, just like your memory, just keeps slipping away. Cut and paste all the text in this text field into the filter.txt file you created earlier in Github. There's no need to keep these rules in the browser's local uBlock Origin filter txt file as they'd be redundant. It's probably ok either way. Let's also leave this browser tab open.
 
 ### You're in the Cloud
 
 Now in Github, you have some text in your filter.txt file. Feel free to add more filter rules or just hit 'Commit changes' in the top right corner. Github is usually pretty good at making up a generic commit message. Leave everything else default or customize it if you feel like it, and hit Commit changes. 
-{% asset_img '5-commit.jpg', 'Commit Changes button' %}
+![Commit Changes button](/assets/img/posts/pbf/5-commit.jpg)
 We now have the same rules hosted in Github rather than being stored locally in uBlock Origin's filters settings. After committing the updates, you'll see the filter.txt file in the files section of your repo. Click on it to open it. You can click the 'pencil' icon to add or remove more filters but for now click the 'Raw' button. 
-{% asset_img '6-edit.jpg', 'Edit and Raw button' %}
+![Edit and Raw buttons](/assets/img/posts/pbf/6-edit.jpg)
 Copy the link in your browser's address bar. Back over in the uBlock Origin dashboard settings, next to the 'My filters' tab click the 'Filter lists' tab. Scroll to the bottom and click 'Import...'. Paste the link to the raw text file in the input box, then scroll to the top and click 'Apply changes'. Then click 'Update now'. That's pretty much it.
-{% asset_img '7-import.jpg', 'Import and Update buttons' %}
+![Import and Update buttons](/assets/img/posts/pbf/7-import.jpg)
 To recap. We used uBlock Origin's element removal feature to build a custom filter locally for our current browser. We instead moved those filters over to a file hosted in Github, then imported the list as a url back into uBlock Origin. You should see that the effect is the same. Why did we do all that? Chill, we're getting there. 
 
 ### Rinse and Repeat
