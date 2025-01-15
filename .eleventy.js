@@ -15,7 +15,7 @@ module.exports = function (eleventyConfig) {
   // Copy these static files to _site folder
   eleventyConfig.addPassthroughCopy('src/assets')
   eleventyConfig.addPassthroughCopy('src/manifest.json')
-  eleventyConfig.addPassthroughCopy('google666a0109d8c0289a.html')
+  eleventyConfig.addPassthroughCopy('src/google666a0109d8c0289a.html')
 
   // To create excerpts
   eleventyConfig.setFrontMatterParsingOptions({
