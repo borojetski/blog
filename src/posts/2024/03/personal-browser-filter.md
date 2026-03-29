@@ -19,7 +19,7 @@ What's unique about this list is that it loads directly in your browser and has 
 This is just an example of tools you'll need to get started:
 1. Firefox w/uBlock Origin installed
     - on Desktop and/or Android
-2. AdGuard Pro (paid - thankfully for now not a subscription)
+2. AdGuard Pro (paid - thankfully for now, not a subscription)
     - on Safari (iOS, iPadOS, and/or MacOS)
 3. A Github account (or a syncing service like Dropbox)
 
